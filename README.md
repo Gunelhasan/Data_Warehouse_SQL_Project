@@ -13,13 +13,44 @@ It includes **fact tables** for transactional data and **dimension tables** for 
 
 ![Data Model](https://github.com/Gunelhasan/Data_Warehouse_SQL_Project/blob/main/data_modelling.jpg)
 
-## 🛠 Tools & Technologies
-- **SQL Server** (Database Engine)
-- **SQL Server Management Studio (SSMS)**
-- **ETL Process with T-SQL**
-- **Dimensional Modeling** (Star Schema)
-- **Data Warehouse Design Principles**
-- **CSV to SQL Data Loading**
+
+<br><br>
+**Working in SQL Server**
+
+Here’s an example of my workflow while creating the `gold.dim_customers` view in SSMS:
+
+![SQL Server Screenshot](sql%20ekran.png)
+
+<br><br>
+
+**Sales Data Mart – Star Schema**
+
+After transforming and loading the data into the **Gold Layer**,  
+I designed a **Star Schema** to organize the Sales Data Mart for analytical purposes.
+
+The schema consists of:
+
+- **Fact Table**: `gold.fact_sales` – stores transaction details such as order dates, quantities, prices, and amounts.
+- **Dimension Tables**:
+  - `gold.dim_customers` – customer profile data
+  - `gold.dim_productss` – product information
+
+**Primary Keys (PK)** uniquely identify each row in dimension tables,  
+and **Foreign Keys (FK)** link the fact table to its related dimensions.
+
+![Sales Data Mart Star Schema](https://github.com/Gunelhasan/Data_Warehouse_SQL_Project/blob/main/SalesDataMart.drawio.png?raw=true)
+
+
+## 🛠️ Important Links & Tools
+Everything I used in this project is free and publicly available.
+
+- **[Datasets](https://github.com/Gunelhasan/Data_Warehouse_SQL_Project/tree/main/dataset)** – CSV files used as the raw source data.
+- **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)** – Lightweight version of SQL Server for hosting the database.
+- **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)** – GUI for managing and querying the SQL Server database.
+- **[GitHub Repository](https://github.com/Gunelhasan/Data_Warehouse_SQL_Project)** – Version control and collaboration.
+- **[Draw.io](https://app.diagrams.net/)** – For designing data architecture, star schema, and diagrams.
+- **[Notion](https://www.notion.so/)** – For project planning and documentation.
+
   
 <br><br>
   **This repository showcases expertise in:**
